@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autó neve" />
+
+    <EditText
+        android:id="@+id/editTextPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rendszám" />
+
+    <EditText
+        android:id="@+id/editTextInterval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Olajcsere intervallum (nap)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autó hozzáadása" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
